@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Taviraj:wght@200;300&display=swap');
+
+:root {
+    --clr-primary: #1d1d1d; /* Color principal */
+    --clr-secondary: #6c757d; /* Color secundario */
+    --clr-accent: #0c2a24; /* Color de acento */
+    --clr-accent--light: #09aa8a; /* Color de acento */
+    --clr-light: #ffffff;
+    --clr-gold: darkkhaki;
+    --margin-menu: 120px;
+    --filter-brightness-photo: brightness(0.4);
+    --f-titles: 'Taviraj', serif;
+    --f-body:  'Taviraj', serif;
+    --f--menu: 'Roboto', sans-serif;
+    --fw-200: 200;
+    --fw-300: 300;
+  }
+
+h1, h2, h3, h4, h5 {
+    font-family: var(--f-titles);
+}
+
+.t-body {
+    font-family: var(--f-body);
+    font-size: 1.65rem;
+}
+    
+.t-body--small {
+    font-size: 1.25rem;
+    font-weight: var(--fw-200);
+}
+
+.header {
+    box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.05);
+}
+
+.nav-link {
+    font-family: var(--f--menu);
+    font-size: .75rem;
+    border-collapse: collapse;
+    transition: all ease 500ms;
+    border-bottom: 2px solid var(--clr-light);
+}
+
+.nav-link:hover {
+    border-bottom: 2px solid var(--clr-accent--light);
+}
+
+.section {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+
+.section--dark {
+    background-color: var(--clr-primary);
+}
+
+.section--conocenos {
+    background-color:whitesmoke;
+}
+
+.hr-gold {
+    background-color: var(--clr-gold);
+    height: 2px;
+    border: none;
+}
+
+h5 {
+    font-size: 4rem;
+    font-weight: lighter;
+}
+
+.carousel-caption--center-right {
+    right: 8%;
+    bottom: 31.25rem;
+    left: 58%;
+    text-align: left;
+}
+
+.filter-brightness-40 {
+    filter: var(--filter-brightness-photo)
+}
+
+.hero {
+    height: 100vh;
+}
+
+.hero-image {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+.hero-title {
+    max-width: 46rem;
+}
+
+.hero-body {
+    display: none;
+}
+
+.footer {
+    background-color: var(--clr-accent);
+    font-family: var(--f-body);
+}
+
+@media (min-width: 768px) {
+
+    .t-body {
+        font-size: 2rem;
+    }
+
+    .t-body--small {
+        font-size: 1.5rem;
+        font-weight: var(--fw-200);
+    }
+
+    .nav-link {
+        font-size: 1rem;
+    }
+
+    .hero-body {
+        display: initial;
+    }
+
+    .rrss {
+        position: static;
+    }
+}
