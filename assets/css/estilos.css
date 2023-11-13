@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Taviraj:wght@200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap');
 
 :root {
     --clr-primary: #1d1d1d; /* Color principal */
@@ -9,25 +9,32 @@
     --clr-gold: darkkhaki;
     --margin-menu: 120px;
     --filter-brightness-photo: brightness(0.4);
-    --f-titles: 'Taviraj', serif;
-    --f-body:  'Taviraj', serif;
-    --f--menu: 'Roboto', sans-serif;
+    --f-titles: 'Poppins', sans-serif;
+    --f-body:  'Poppins', sans-serif;
+    --f-menu: 'Poppins', sans-serif;
     --fw-200: 200;
-    --fw-300: 300;
+    --fw-400: 400;
+    --fw-700: 700;
   }
 
 h1, h2, h3, h4, h5 {
     font-family: var(--f-titles);
+    font-weight: var(--fw-700)!important;
 }
+
+h1, h2 {
+    text-transform: uppercase;
+}
+
 
 .t-body {
     font-family: var(--f-body);
-    font-size: 1.65rem;
+    font-size: 1.25rem;
+    font-weight: var(--fw-200);
 }
     
 .t-body--small {
     font-size: 1.25rem;
-    font-weight: var(--fw-200);
 }
 
 .header {
@@ -35,7 +42,8 @@ h1, h2, h3, h4, h5 {
 }
 
 .nav-link {
-    font-family: var(--f--menu);
+    font-family: var(--f-menu);
+    font-weight: var(--fw-400);
     font-size: .75rem;
     border-collapse: collapse;
     transition: all ease 500ms;
@@ -59,15 +67,11 @@ h1, h2, h3, h4, h5 {
     background-color:whitesmoke;
 }
 
-.hr-gold {
-    background-color: var(--clr-gold);
-    height: 2px;
-    border: none;
-}
-
-h5 {
-    font-size: 4rem;
-    font-weight: lighter;
+.display-4--lowcase {
+    display: block;
+    font-weight: var(--fw-200);
+    text-transform: lowercase;
+    font-size: 1.25rem;
 }
 
 .carousel-caption--center-right {
@@ -114,8 +118,14 @@ h5 {
 
     .t-body--small {
         font-size: 1.5rem;
-        font-weight: var(--fw-200);
     }
+
+    .display-4--lowcase {
+        display: block;
+        font-weight: var(--fw-200);
+        text-transform: lowercase;
+        font-size: 2rem;
+    }    
 
     .nav-link {
         font-size: 1rem;
