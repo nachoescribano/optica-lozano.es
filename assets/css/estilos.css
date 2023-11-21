@@ -26,6 +26,11 @@ h1, h2 {
     text-transform: uppercase;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+  }
+
 
 .t-body {
     font-family: var(--f-body);
