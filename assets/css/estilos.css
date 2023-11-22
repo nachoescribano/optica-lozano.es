@@ -26,12 +26,6 @@ h1, h2 {
     text-transform: uppercase;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-  }
-
-
 .t-body {
     font-family: var(--f-body);
     font-size: 1.25rem;
@@ -57,6 +51,14 @@ img {
 
 .nav-link:hover {
     border-bottom: 2px solid var(--clr-accent--light);
+}
+
+.anchor {
+    text-decoration: underline;
+}
+
+.anchor:hover {
+    text-decoration: none;
 }
 
 .section {
@@ -113,6 +115,21 @@ img {
 .footer {
     background-color: var(--clr-accent);
     font-family: var(--f-body);
+}
+
+.whatsapp {
+    position: fixed;
+    z-index: 3;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    border-radius: 50%;
+    padding: .35em;
+    transition: all ease-in-out 250ms;
+}
+
+.whatsapp:hover {
+    opacity:0.8;
 }
 
 @media (min-width: 768px) {
