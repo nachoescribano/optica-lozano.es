@@ -54,7 +54,7 @@ h1, h2 {
 }
 
 .anchor {
-    text-decoration: underline;
+    text-decoration: underline dotted;
 }
 
 .anchor:hover {
